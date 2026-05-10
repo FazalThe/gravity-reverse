@@ -1,0 +1,31 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Godot export presets containing secrets (encryption keys, credentials)
+export_presets.cfg
+
+# Build/export output
+/build/
+/builds/
+/export/
+/exports/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs and crash dumps
+*.log
+logs/
