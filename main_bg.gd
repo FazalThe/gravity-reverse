@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var chunk = []
 @onready var width = 160
-@onready var speed = 3
+@onready var speed = 2
 
 func _ready() -> void:
 	for i in range(7):
