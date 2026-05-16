@@ -1,10 +1,13 @@
 extends Node2D
 
-@onready var speed = 2.5
+@onready var speed 
+#@onready var acc = 0.1
 
+@onready var node: Node2D = $"."
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
+	#speed += acc * delta 
 	position.x -= speed 
 
 

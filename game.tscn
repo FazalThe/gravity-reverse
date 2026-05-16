@@ -31,7 +31,7 @@ position = Vector2(445, 0)
 position = Vector2(48, 0)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_feb5d")]
-position = Vector2(24, 25)
+position = Vector2(22, 50)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(289, -35)
@@ -40,12 +40,15 @@ zoom = Vector2(2.005, 2.005)
 [node name="Markers" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="Markers"]
-position = Vector2(598, -71)
+position = Vector2(963, -74)
 
 [node name="Marker2D2" type="Marker2D" parent="Markers"]
-position = Vector2(598, 43)
+position = Vector2(963, 43)
 
-[node name="Timer" type="Timer" parent="."]
+[node name="ObsTimer" type="Timer" parent="."]
+wait_time = 0.3
 autostart = true
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="AccTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="ObsTimer" to="." method="_on_timer_timeout"]
