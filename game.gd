@@ -4,6 +4,7 @@ extends Node2D
 @onready var speed = 2.5
 @onready var acc = 0.05
 @onready var spawn_rate = 0.7 
+@onready var timer: Timer = $ObsTimer
 
 var obs_scene = preload("res://obstacle.tscn")
 
@@ -20,6 +21,9 @@ func _process(delta: float) -> void:
 
 
 func _on_timer_timeout() -> void:
+	
+	timer.wait_time -= 0.0005
+	
 	if start:
 		var rand = randf()
 		spawn_rate -= 0.001
@@ -29,3 +33,5 @@ func _on_timer_timeout() -> void:
 			obs.speed = speed 
 			var pos_marker = $Markers.get_children().pick_random()
 			obs.position = pos_marker.position
+			if obs.position.y < -14 :
+				obs.sprite.flip_v = true

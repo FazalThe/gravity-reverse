@@ -21,7 +21,7 @@ func _physics_process(delta: float) -> void:
 		
 		sprite.frame_progress += 0.01
 		
-		JUMP_VELOCITY += 1
+		JUMP_VELOCITY += 0.05
 		# Add the gravity.
 		if is_on_floor() or is_on_ceiling():
 			sprite.play("run")

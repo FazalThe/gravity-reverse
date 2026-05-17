@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8tr1mdd5rros"
-path="res://.godot/imported/Cyber.png-f5cee97028da40aec17ac211adcacaac.ctex"
+uid="uid://dm3e5bhv2o63i"
+path="res://.godot/imported/Slime1_Death.png-99d0ece75b08d0c39b834bd4fd191bc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Cyber.png"
-dest_files=["res://.godot/imported/Cyber.png-f5cee97028da40aec17ac211adcacaac.ctex"]
+source_file="res://Assets/Player/Slime1_Death.png"
+dest_files=["res://.godot/imported/Slime1_Death.png-99d0ece75b08d0c39b834bd4fd191bc3.ctex"]
 
 [params]
 
