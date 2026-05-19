@@ -5,7 +5,7 @@ extends CharacterBody2D
 @onready var body: Node2D = $Node2D
 @onready var down = true
 @onready var dir = 1
-@onready var JUMP_VELOCITY = 300.0
+@onready var JUMP_VELOCITY = 400.0
 @onready var game: Node2D = $".."
 
 

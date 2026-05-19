@@ -9,7 +9,7 @@ extends Node2D
 func _ready() -> void:
 	for i in range(7):
 		chunk.append(get_node("Chunk" + str(i)))
-		chunk[i].position.x = (width*i)-140
+		chunk[i].position.x = (width*i)-200
 		
 func _physics_process(delta: float) -> void:
 	if game.start :
@@ -18,4 +18,4 @@ func _physics_process(delta: float) -> void:
 			if c.position.x < -width*2:
 				c.position.x += width*7
 			else:
-				c.position -= Vector2(speed,0)
+				c.position.x -= speed

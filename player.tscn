@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://hrj5eswbp3q8"]
+[gd_scene load_steps=19 format=3 uid="uid://hrj5eswbp3q8"]
 
 [ext_resource type="Script" uid="uid://c7e6kdu62byc7" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://xv7etksm5m8j" path="res://Assets/Player/Pink_Monster_Animation_List.png" id="2_onrkg"]
@@ -37,10 +37,6 @@ region = Rect2(288, 32, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
 atlas = ExtResource("2_onrkg")
 region = Rect2(320, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nvl01"]
-atlas = ExtResource("2_onrkg")
-region = Rect2(352, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ivps1"]
 atlas = ExtResource("2_onrkg")
@@ -97,9 +93,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_n7ghd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nvl01")
 }],
 "loop": true,
 "name": &"jump",

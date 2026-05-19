@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bcyvywqfsh5v"]
+[gd_scene load_steps=6 format=3 uid="uid://bcyvywqfsh5v"]
 
 [ext_resource type="PackedScene" uid="uid://4r07fc1tea0g" path="res://chunk.tscn" id="1_e2o6t"]
 [ext_resource type="Script" uid="uid://bokld0whh8p5a" path="res://game.gd" id="1_fc0e3"]
 [ext_resource type="Script" uid="uid://bi5ch3ywu2m1o" path="res://main_bg.gd" id="1_feb5d"]
 [ext_resource type="PackedScene" uid="uid://hrj5eswbp3q8" path="res://player.tscn" id="2_feb5d"]
+[ext_resource type="PackedScene" uid="uid://c8t12t6w5cbhk" path="res://control.tscn" id="5_7jktm"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_fc0e3")
@@ -31,24 +32,30 @@ position = Vector2(853, 0)
 position = Vector2(48, 0)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_feb5d")]
-position = Vector2(21, 58)
+position = Vector2(106, 58)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(289, -35)
-zoom = Vector2(2.005, 2.005)
+zoom = Vector2(2.255, 2.255)
 
 [node name="Markers" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="Markers"]
-position = Vector2(963, -89)
+position = Vector2(852, -88)
 
 [node name="Marker2D2" type="Marker2D" parent="Markers"]
-position = Vector2(963, 57)
+position = Vector2(853, 56)
 
 [node name="ObsTimer" type="Timer" parent="."]
 wait_time = 0.4
 autostart = true
 
 [node name="AccTimer" type="Timer" parent="."]
+
+[node name="Control" parent="." instance=ExtResource("5_7jktm")]
+offset_left = 286.0
+offset_top = -277.0
+offset_right = 286.0
+offset_bottom = -277.0
 
 [connection signal="timeout" from="ObsTimer" to="." method="_on_timer_timeout"]
